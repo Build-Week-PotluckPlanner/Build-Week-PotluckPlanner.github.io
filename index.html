@@ -11,20 +11,33 @@
 
 <body>
     <container>
-        <nav id="indexTopNav">
+        <span id="topPage"></span>
+
+        <nav class="navSection">
             <div class="navLogoSection">
                 <a href="index.html"><img src="img/logo.png" alt="Potluck Planner Logo"></a>
             </div>
             <div class=navTextSection>
-                <span><a href="#createAccount" class="button"><span>Create</span></a><span class="extraText"> an
-                        Account</span></span>
-                <span><span class="extraText">Already a User? </span><a href="#signIn" class="button"><span>Sign
-                            In</span></a></span>
-                <span><span class="extraText">Want to learn more </span><a href="#about.html">About Us</a></span>
+                <span class=navTextSectionSub>
+                    <span class="extraText">Ready to Get Started? </span>
+                    <a href="#createAccount" class="button">
+                        <span>Create an Account</span>
+                    </a>
+                </span>
+                <span class=navTextSectionSub>
+                    <span class="extraText">Already a User? </span>
+                    <a href="#signIn" class="button">
+                        <span>Sign In</span>
+                    </a>
+                </span>
+                <span class=navTextSectionSub>
+                        <span class="extraText">Want to Learn More? </span>
+                    <a href="#about.html" class="button">About Us</a>
+                </span>
             </div>
         </nav>
 
-        <header>
+        <header class="headerSection">
             <div class="headerBanner">
                 <img src="img/banner1920x400.jpg" alt="Potluck Planner banner">
             </div>
@@ -36,28 +49,29 @@
                 </p>
             </div>
         </header>
-        <content>
-            <section class="contentSection sectionOne">
+
+        <section class="contentSection">
+            <section class="sectionOne">
                 <div class="contentFeatures">
-                    <section class="contentSubSection subSectionOne">
+                    <section class="subSection">
                         <p>Create and organize a potluck. Set your dates and times.</p>
                         <img src="img/plan600x300.jpg" alt="image of a marked calendar">
                     </section>
-                    <section class="contentSubSection subSectionTwo">
+                    <section class="subSection">
                         <p>Make a list of what foods you want to see at the potluck.</p>
                         <img src="img/list600x300.jpg" alt="image of a checklist">
                     </section>
-                    <section class="contentSubSection subSectionThree">
+                    <section class="subSection">
                         <p>RSVP to upcoming potlucks to let organizers know you are going.</p>
                         <img src="img/respond600x300.jpg" alt="image of someone checking their phone">
                     </section>
-                    <section class="contentSubSection subSectionFour">
+                    <section class="subSection">
                         <p>Let organizers know what you're bringing to the potluck.</p>
                         <img src="img/bringing600x300.jpg" alt="image of someone offering a bundle of grapes">
                     </section>
                 </div>
             </section>
-            <section class="contentSection sectionTwo">
+            <section class="sectionTwo">
                 <div>
                     <img src="img/verticalFoodsTwo400x800.jpg" alt="table of food">
                 </div>
@@ -81,18 +95,28 @@
 
 
 
-        </content>
+        </section>
+
         <footer>
             <section class="copyright">Potluck Planner &copy;2019</section>
             <nav>
-                <span><a href="#createAccount" class="button"><span>Create</span></a><span class="extraText"> an
-                        Account</span></span>
-                <span><span class="extraText">Already a User? </span><a href="#signIn" class="button"><span>Sign
-                            In</span></a></span>
-                <span><span class="extraText">Want to learn more </span><a href="#about.html">About Us</a></span>
-                <span><a href="#indexTopNav">Back to the top</a></span>
+                    <span class=navTextSectionSub>
+                            <a href="#createAccount" class="button">
+                                <span>Create an Account</span>
+                            </a>
+                    </span>
+                    <span class=navTextSectionSub>
+                            <a href="#signIn" class="button">
+                                <span>Sign In</span>
+                            </a>
+                    </span>
+                    <span class=navTextSectionSub>
+                            <a href="#about.html" class="button">About Us</a>
+                    </span>
+                <span><a href="#topPage">Back to the top</a></span>
             </nav>
         </footer>
+
     </container>
 </body>
 

@@ -1,0 +1,37 @@
+.bordertest(){
+    border: solid red 1px;
+}
+
+.buttonStyle {
+    .button{
+        background-color: green;
+        color: gold;
+        padding: 2% 4%;
+        border-radius: 10px;
+        .flexCenter();
+    }
+    
+}
+
+.pad(@value: 1%){
+    padding: @value;
+}
+
+.padV(@value: 1%){
+    padding: @value 0;
+}
+
+.padH(@value: 1){
+    padding: 0 @value;
+}
+
+.nopad(){
+    padding: 0;
+    margin: 0;
+}
+
+.flexCenter(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
