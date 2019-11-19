@@ -2,13 +2,18 @@
     border: solid red 1px;
 }
 
-.buttonStyle {
+.buttonStyle(@color: gold, @bgColor: green) {
     .button{
-        background-color: green;
-        color: gold;
+        background-color: @bgColor;
+        color: @color;
         padding: 2% 4%;
         border-radius: 10px;
         .flexCenter();
+
+        &:hover{
+            color: @bgColor;
+            background-color: @color;
+        }
     }
     
 }
