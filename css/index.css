@@ -126,15 +126,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.buttonStyle .button {
-  background-color: green;
-  color: gold;
-  padding: 2% 4%;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -152,6 +143,9 @@ h2 {
 h3 {
   font-size: 2.8rem;
 }
+h4 {
+  font-size: 2rem;
+}
 p {
   font-size: 1.6rem;
   line-height: 1.4;
@@ -159,9 +153,8 @@ p {
 span {
   font-size: 1.6rem;
 }
-.container {
+container {
   max-width: 1920px;
-  width: 1920px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -169,6 +162,8 @@ span {
   align-items: center;
 }
 .navSection {
+  background: black;
+  color: white;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -207,10 +202,40 @@ span {
   justify-content: center;
   align-items: center;
 }
+.navSection .navTextSection .navTextSectionSub .button:hover {
+  color: green;
+  background-color: gold;
+}
+footer {
+  width: 100%;
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footerNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+footer .footerNav .navTextSectionSub {
+  padding: 1%;
+}
 .headerSection {
   width: 100%;
   padding: 1% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  margin-bottom: 1%;
 }
 .headerSection .headerBanner {
   width: 100%;
@@ -220,9 +245,95 @@ span {
   width: 100%;
 }
 .headerSection .headerSlogan {
-  width: 80%;
-  padding: 1% 0;
+  width: 90%;
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
 }
 .headerSection .headerSlogan p {
-  padding: 1% 0;
+  padding: 3%;
+  width: 75%;
+}
+.contentContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  background: lightyellow;
+  border-top: solid gray 1px;
+  border-bottom: solid gray 1px;
+}
+.contentContainer .contentSection {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contentContainer .contentSection .sectionOne {
+  width: 100%;
+}
+.contentContainer .contentSection .sectionOne .contentFeatures {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2% 0;
+}
+.contentContainer .contentSection .sectionOne .contentFeatures .subSection {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1%;
+  justify-content: space-evenly;
+  border-bottom: dashed gray 1px;
+}
+.contentContainer .contentSection .sectionOne .contentFeatures .subSection p {
+  width: 40%;
+  text-align: center;
+  border: solid black 1px;
+  background: white;
+}
+.contentContainer .contentSection .sectionOne .contentFeatures .subSection img {
+  width: 40%;
+  margin-bottom: 1%;
+  box-shadow: 10px 10px 10px gray;
+}
+.contentContainer .contentSection .sectionOne .contentFeatures .subSection:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.contentContainer .contentSection .sectionTwo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contentContainer .contentSection .sectionTwo .sectionTwoIMG img {
+  width: 100%;
+}
+.contentContainer .contentSection .sectionTwo .sectionTwoInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.contentContainer .contentSection .sectionTwo .sectionTwoInfo .contentCreateEvent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5%;
+}
+.contentContainer .contentSection .sectionTwo .sectionTwoInfo .contentRSVP {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5%;
 }

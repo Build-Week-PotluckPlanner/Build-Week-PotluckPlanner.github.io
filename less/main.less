@@ -1,7 +1,7 @@
 .headerSection{
     width: 100%;
     padding: 1% 0;
-    
+    .flexCenter();
     flex-direction: column;
     .headerBanner{
         width: 100%;
@@ -11,10 +11,85 @@
         padding: 1% 0;
     }
     .headerSlogan{
-        width: 80%;
-        padding: 1% 0;
+        width: 90%;
+        padding: 1%;
+        .flexCenter();
+        justify-content: space-around;
         p{
-            .padV();
+            .pad(3%);
+            width: 75%;
         }
     }
+    margin-bottom: 1%;
 }
+
+.contentContainer{
+    .flexCenter();
+    width: 100%;
+    flex-direction: column;
+    background: lightyellow;
+    border-top: solid gray 1px;
+    border-bottom: solid gray 1px;
+    .contentSection {
+        width: 80%;
+        .flexCenter();
+        flex-direction: column;
+        .sectionOne{
+            width: 100%;
+            .contentFeatures{
+                width: 100%;
+                .flexCenter();
+                flex-direction: column;
+                margin: 2% 0;
+                .subSection{
+                    width: 80%;
+                    .flexCenter();
+                    margin-bottom: 1%;
+                    justify-content: space-evenly;
+                    p{
+                        width: 40%;
+                        text-align: center;
+                        border: solid black 1px;
+                        background: white;
+                    }
+                    img{
+                        width: 40%;
+                        margin-bottom: 1%;
+                        box-shadow: 10px 10px 10px gray;
+                    }
+                    &:nth-child(even){
+                        flex-direction: row-reverse;
+                    }
+                    border-bottom: dashed gray 1px;
+                }//end subSection
+            }//end contentFeatures
+        }//end sectionOne
+        .sectionTwo{
+            width: 100%;
+            .flexCenter();
+            .sectionTwoIMG{
+                img{
+                    width: 100%;
+                }
+            }
+            .sectionTwoInfo{
+                .flexCenter();
+                flex-direction: column;
+                width: 100%;
+                .contentCreateEvent{
+                    .flexCenter();
+                    flex-direction: column;
+                    margin: 5%;
+                }
+                .contentRSVP{
+                    .flexCenter();
+                    flex-direction: column;
+                    margin: 5%;
+                }
+            }
+        }
+        
+    }//end contentSection
+}//end contentContainer
+
+
