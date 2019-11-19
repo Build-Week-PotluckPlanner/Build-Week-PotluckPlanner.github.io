@@ -170,6 +170,11 @@ container {
   align-items: center;
   border-bottom: solid gray 2px;
 }
+@media (max-width: 600px) {
+  .navSection {
+    flex-direction: column-reverse;
+  }
+}
 .navSection .navLogoSection {
   display: flex;
   justify-content: center;
@@ -178,9 +183,21 @@ container {
 }
 .navSection .navLogoSection img {
   width: 100%;
-  animation-name: blurLogo;
-  animation-duration: 4s;
-  animation-fill-mode: forwards;
+}
+@media (max-width: 900px) {
+  .navSection .navLogoSection {
+    width: 45%;
+  }
+}
+@media (max-width: 800px) {
+  .navSection .navLogoSection {
+    width: 35%;
+  }
+}
+@media (max-width: 600px) {
+  .navSection .navLogoSection {
+    width: 100%;
+  }
 }
 .navSection .navTextSection {
   display: flex;
@@ -194,7 +211,9 @@ container {
   align-items: center;
   text-align: center;
   flex-direction: column;
+  justify-content: space-between;
   width: 33%;
+  height: 60px;
 }
 .navSection .navTextSection .navTextSectionSub .button {
   background-color: green;
@@ -208,6 +227,51 @@ container {
 .navSection .navTextSection .navTextSectionSub .button:hover {
   color: green;
   background-color: gold;
+}
+@media (max-width: 600px) {
+  .navSection .navTextSection .navTextSectionSub .button {
+    width: 100%;
+    border-radius: 0;
+  }
+  .navSection .navTextSection .navTextSectionSub .button:hover {
+    color: green;
+    background-color: gold;
+  }
+}
+.navSection .navTextSection .navTextSectionSub a:link,
+.navSection .navTextSection .navTextSectionSub a:hover,
+.navSection .navTextSection .navTextSectionSub a:visited,
+.navSection .navTextSection .navTextSectionSub a:active {
+  text-decoration: none;
+}
+@media (max-width: 600px) {
+  .navSection .navTextSection .navTextSectionSub {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    height: auto;
+    background-color: green;
+    border-bottom: solid gold 1px;
+  }
+  .navSection .navTextSection .navTextSectionSub .extraText {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .navSection .navTextSection {
+    width: 55%;
+  }
+}
+@media (max-width: 800px) {
+  .navSection .navTextSection {
+    width: 65%;
+  }
+}
+@media (max-width: 600px) {
+  .navSection .navTextSection {
+    width: 100%;
+    flex-direction: column;
+  }
 }
 footer {
   width: 100%;
@@ -296,11 +360,12 @@ footer .footerNav .navTextSectionSub {
   justify-content: space-evenly;
   border-bottom: dashed gray 1px;
 }
-.contentContainer .contentSection .sectionOne .contentFeatures .subSection p {
+.contentContainer .contentSection .sectionOne .contentFeatures .subSection h4 {
   width: 40%;
   text-align: center;
   border: solid black 1px;
   background: white;
+  padding: 1%;
 }
 .contentContainer .contentSection .sectionOne .contentFeatures .subSection img {
   width: 40%;

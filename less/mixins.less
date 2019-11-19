@@ -2,7 +2,7 @@
     border: solid red 1px;
 }
 
-.buttonStyle(@color: gold, @bgColor: green) {
+.buttonStyle(@color: @color, @bgColor: @bgColor) {
     .button{
         background-color: @bgColor;
         color: @color;
@@ -13,6 +13,14 @@
         &:hover{
             color: @bgColor;
             background-color: @color;
+        }
+        @media @mobile1{
+            &:hover{
+                color: @bgColor;
+                background-color: @color;
+            }
+            width: 100%;
+            border-radius: 0;
         }
     }
     
