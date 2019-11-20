@@ -144,7 +144,13 @@ h3 {
   font-size: 2.8rem;
 }
 h4 {
+  font-size: 2.4rem;
+}
+h5 {
   font-size: 2rem;
+}
+h6 {
+  font-size: 1.6rem;
 }
 p {
   font-size: 1.6rem;
@@ -292,7 +298,9 @@ footer .footerNav {
   justify-content: center;
   align-items: center;
   width: 50%;
+  padding: 1%;
   justify-content: space-around;
+  border-top: solid gray 1px;
 }
 @media (max-width: 600px) {
   footer .footerNav .navTextSectionSub {
@@ -303,6 +311,7 @@ footer .footerNav {
 @media (max-width: 1000px) {
   footer .footerNav {
     width: 75%;
+    justify-content: space-around;
   }
 }
 @media (max-width: 800px) {
@@ -579,5 +588,97 @@ footer .footerNav {
   .contentContainer .contentSection {
     width: 100%;
     justify-content: space-between;
+  }
+}
+.contentContainer .contentSectionAbout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 90%;
+}
+.contentContainer .contentSectionAbout .theTeam {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.contentContainer .contentSectionAbout .theTeam .teamMember {
+  padding: 1%;
+  width: 30%;
+  border: dashed 1px gray;
+  background-color: lightyellow;
+  margin: 1%;
+}
+.contentContainer .contentSectionAbout .theTeam .teamMember .memberInfoContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contentContainer .contentSectionAbout .theTeam .teamMember .memberInfoContainer img {
+  width: 50%;
+  box-shadow: 8px 8px 8px black;
+  margin: 2%;
+  background-color: white;
+}
+@media (max-width: 800px) {
+  .contentContainer .contentSectionAbout .theTeam .teamMember .memberInfoContainer img {
+    box-shadow: 5px 5px 5px black;
+  }
+}
+@media (max-width: 500px) {
+  .contentContainer .contentSectionAbout .theTeam .teamMember .memberInfoContainer img {
+    box-shadow: 2px 2px 2px black;
+  }
+}
+.contentContainer .contentSectionAbout .theTeam .teamMember .memberInfoContainer .memberInfoDetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1%;
+  flex-direction: column;
+}
+.contentContainer .contentSectionAbout .theTeam .teamMember .memberInfoContainer .memberInfoDetails * {
+  text-align: center;
+}
+.contentContainer .contentSectionAbout .theTeam .teamMember .teamLinksSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+}
+.contentContainer .contentSectionAbout .theTeam .teamMember .teamLinksSection a {
+  margin: 1%;
+}
+.contentContainer .contentSectionAbout .theTeam .teamMember .teamLinksSection a span {
+  display: none;
+}
+.contentContainer .contentSectionAbout .theTeam .teamMember .teamLinksSection a:visited,
+.contentContainer .contentSectionAbout .theTeam .teamMember .teamLinksSection a:link {
+  text-decoration: none;
+  color: #4b4b4b;
+}
+.contentContainer .contentSectionAbout .theTeam .teamMember .teamLinksSection a:hover {
+  color: #292929;
+}
+.contentContainer .contentSectionAbout .theTeam .teamMember .teamLinksSection a:active {
+  color: black;
+}
+@media (max-width: 800px) {
+  .contentContainer .contentSectionAbout .theTeam .teamMember {
+    width: 45%;
+  }
+}
+@media (max-width: 500px) {
+  .contentContainer .contentSectionAbout .theTeam .teamMember {
+    width: 90%;
+    margin: 5% 0;
   }
 }

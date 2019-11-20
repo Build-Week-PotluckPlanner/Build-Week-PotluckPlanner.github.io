@@ -1,0 +1,79 @@
+.contentContainer{
+    .contentSectionAbout{
+        .flexCenter();
+        flex-direction: row;
+        width: 90%;
+        .theTeam{
+            .flexCenter();
+            justify-content: space-evenly;
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .teamMember{
+                .pad();
+                width: 30%;
+                border: dashed 1px gray;
+                background-color: @themeColor1;
+                margin: 1%;
+                
+                .memberInfoContainer{
+                    width: 100%;
+                    .flexCenter();
+                    flex-direction: column;
+                    img{
+                        width: 50%;
+                        box-shadow: 8px 8px 8px black;
+                        margin: 2%;
+                        background-color: white;
+                        @media @tablet2{
+                            box-shadow: 5px 5px 5px black;
+                        }
+                        @media @mobile2{
+                            box-shadow: 2px 2px 2px black;
+                        }
+                    }
+                    .memberInfoDetails {
+                        .flexCenter();
+                        width: 100%;
+                        .pad();
+                        flex-direction: column;
+                        *{
+                            text-align: center;
+                        }
+                    }
+                    
+                }
+                .teamLinksSection{
+                    width: 100%;
+                    .flexCenter();
+                    .pad();
+                    a{
+                        margin: 1%;
+                        span{
+                            display:none;
+                        }
+                        &:visited, &:link {
+                            text-decoration: none;
+                            color: rgb(75, 75, 75);
+                        }
+                        &:hover {
+                            color: rgb(41, 41, 41);
+                        }
+                        &:active{
+                            color: black;
+                        }
+                    }
+
+                }
+                @media @tablet2{
+                    width: 45%;
+                }
+                @media @mobile2{
+                    width: 90%;
+                    margin: 5% 0;
+                }
+
+            }//end teamMember
+        }
+    }
+}
