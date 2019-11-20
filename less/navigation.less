@@ -3,14 +3,23 @@
     color: black;
     width: 100%;
     .flexCenter();
+    @media @mobile1{
+        flex-direction: column-reverse;
+    }
     .navLogoSection {
         .flexCenter();
         width: 50%;
         img{
             width: 100%;
-            animation-name: blurLogo;
-            animation-duration: 4s;
-            animation-fill-mode: forwards;
+        }
+        @media @tablet1{
+            width: 45%;
+        }
+        @media @tablet2{
+            width: 35%;
+        }
+        @media @mobile1{
+            width: 100%;
         }
     }
     .navTextSection{
@@ -20,8 +29,34 @@
             .flexCenter();
             text-align: center;
             flex-direction: column;
+            justify-content: space-between;
             width: 33%;
-            .buttonStyle(gold, green);
+            .buttonStyle(@color, @bgColor);
+            a:link, a:hover, a:visited, a:active{
+                text-decoration: none;
+            }
+            height: 60px;
+            @media @mobile1{
+                .extraText{
+                    display: none;
+                }
+                flex-direction: row;
+                width: 100%;
+                justify-content: center;
+                height: auto;
+                background-color: @bgColor;
+                border-bottom: solid @color 1px;
+            }
+        }
+        @media @tablet1{
+            width: 55%;
+        }
+        @media @tablet2{
+            width: 65%;
+        }
+        @media @mobile1{
+            width: 100%;
+            flex-direction: column;
         }
     }
     border-bottom: solid gray 2px;
