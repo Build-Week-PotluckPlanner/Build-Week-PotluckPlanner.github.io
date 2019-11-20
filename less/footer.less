@@ -5,12 +5,34 @@ footer {
     flex-direction: column;
     .copyright{
         .flexCenter();
+        .pad();
     }
     .footerNav{
         .flexCenter();
         width: 50%;
+        justify-content: space-around;
         .navTextSectionSub{
-            .pad();
+            @media @mobile1{
+                width: 100%;
+                border-bottom: solid @color 1px;
+            }
         }
+        @media @tablet1{
+            width: 75%
+        }
+
+        @media @tablet2{
+            width: 80%;
+        }
+        @media @mobile1{
+            width: 100%;
+            align-content: center;
+            .buttonStyle(@color, @bgColor);
+            flex-direction: column;
+            background-color: @bgColor;
+            border-top: solid @color 1px;
+        }
+        
     }
+    
 }
