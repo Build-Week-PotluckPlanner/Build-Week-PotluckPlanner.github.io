@@ -590,52 +590,53 @@ footer .footerNav {
     justify-content: space-between;
   }
 }
-.contentContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  flex-direction: column;
-  background: lightyellow;
-  border-top: solid gray 1px;
-  border-bottom: solid gray 1px;
-}
-.contentContainer .contentSection {
+.contentContainer .contentSectionAbout {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  width: 80%;
+  width: 90%;
 }
-.contentContainer .contentSection .theTeam {
+.contentContainer .contentSectionAbout .theTeam {
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: space-evenly;
   width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.contentContainer .contentSection .theTeam .teamMember {
+.contentContainer .contentSectionAbout .theTeam .teamMember {
   padding: 1%;
-  width: 25%;
+  width: 30%;
   border: dashed 1px gray;
   background-color: lightyellow;
   margin: 1%;
 }
-.contentContainer .contentSection .theTeam .teamMember .memberInfoContainer {
+.contentContainer .contentSectionAbout .theTeam .teamMember .memberInfoContainer {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.contentContainer .contentSection .theTeam .teamMember .memberInfoContainer img {
+.contentContainer .contentSectionAbout .theTeam .teamMember .memberInfoContainer img {
   width: 50%;
-  box-shadow: 10px 10px 10px black;
+  box-shadow: 8px 8px 8px black;
   margin: 2%;
   background-color: white;
 }
-.contentContainer .contentSection .theTeam .teamMember .memberInfoContainer .memberInfoDetails {
+@media (max-width: 800px) {
+  .contentContainer .contentSectionAbout .theTeam .teamMember .memberInfoContainer img {
+    box-shadow: 5px 5px 5px black;
+  }
+}
+@media (max-width: 500px) {
+  .contentContainer .contentSectionAbout .theTeam .teamMember .memberInfoContainer img {
+    box-shadow: 2px 2px 2px black;
+  }
+}
+.contentContainer .contentSectionAbout .theTeam .teamMember .memberInfoContainer .memberInfoDetails {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -643,27 +644,41 @@ footer .footerNav {
   padding: 1%;
   flex-direction: column;
 }
-.contentContainer .contentSection .theTeam .teamMember .teamLinksSection {
+.contentContainer .contentSectionAbout .theTeam .teamMember .memberInfoContainer .memberInfoDetails * {
+  text-align: center;
+}
+.contentContainer .contentSectionAbout .theTeam .teamMember .teamLinksSection {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1%;
 }
-.contentContainer .contentSection .theTeam .teamMember .teamLinksSection a {
+.contentContainer .contentSectionAbout .theTeam .teamMember .teamLinksSection a {
   margin: 1%;
 }
-.contentContainer .contentSection .theTeam .teamMember .teamLinksSection a span {
+.contentContainer .contentSectionAbout .theTeam .teamMember .teamLinksSection a span {
   display: none;
 }
-.contentContainer .contentSection .theTeam .teamMember .teamLinksSection a:visited,
-.contentContainer .contentSection .theTeam .teamMember .teamLinksSection a:link {
+.contentContainer .contentSectionAbout .theTeam .teamMember .teamLinksSection a:visited,
+.contentContainer .contentSectionAbout .theTeam .teamMember .teamLinksSection a:link {
   text-decoration: none;
   color: #4b4b4b;
 }
-.contentContainer .contentSection .theTeam .teamMember .teamLinksSection a:hover {
+.contentContainer .contentSectionAbout .theTeam .teamMember .teamLinksSection a:hover {
   color: #292929;
 }
-.contentContainer .contentSection .theTeam .teamMember .teamLinksSection a:active {
+.contentContainer .contentSectionAbout .theTeam .teamMember .teamLinksSection a:active {
   color: black;
+}
+@media (max-width: 800px) {
+  .contentContainer .contentSectionAbout .theTeam .teamMember {
+    width: 45%;
+  }
+}
+@media (max-width: 500px) {
+  .contentContainer .contentSectionAbout .theTeam .teamMember {
+    width: 90%;
+    margin: 5% 0;
+  }
 }
