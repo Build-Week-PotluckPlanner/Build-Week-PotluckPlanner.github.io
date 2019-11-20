@@ -10,7 +10,9 @@ footer {
     .footerNav{
         .flexCenter();
         width: 50%;
+        .pad();
         justify-content: space-around;
+        border-top: solid gray 1px;
         .navTextSectionSub{
             @media @mobile1{
                 width: 100%;
@@ -18,7 +20,8 @@ footer {
             }
         }
         @media @tablet1{
-            width: 75%
+            width: 75%;
+            justify-content: space-around;
         }
 
         @media @tablet2{

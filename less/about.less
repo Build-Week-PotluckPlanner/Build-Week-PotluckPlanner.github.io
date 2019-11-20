@@ -1,0 +1,68 @@
+.contentContainer{
+    .flexCenter();
+    width: 100%;
+    flex-direction: column;
+    background: @themeColor1;
+    border-top: solid gray 1px;
+    border-bottom: solid gray 1px;
+    .contentSection{
+        .flexCenter();
+        flex-direction: row;
+        width: 80%;
+        .theTeam{
+            .flexCenter();
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .teamMember{
+                .pad();
+                width: 25%;
+                border: dashed 1px gray;
+                background-color: @themeColor1;
+                margin: 1%;
+                
+                .memberInfoContainer{
+                    width: 100%;
+                    .flexCenter();
+                    flex-direction: column;
+                    img{
+                    width: 50%;
+                    box-shadow: 10px 10px 10px black;
+                    margin: 2%;
+                    background-color: white;
+                    }
+                    .memberInfoDetails {
+                        .flexCenter();
+                        width: 100%;
+                        .pad();
+                        flex-direction: column;
+                    }
+                    
+                }
+                .teamLinksSection{
+                    width: 100%;
+                    .flexCenter();
+                    .pad();
+                    a{
+                        margin: 1%;
+                        span{
+                            display:none;
+                        }
+                        &:visited, &:link {
+                            text-decoration: none;
+                            color: rgb(75, 75, 75);
+                        }
+                        &:hover {
+                            color: rgb(41, 41, 41);
+                        }
+                        &:active{
+                            color: black;
+                        }
+                    }
+
+                }
+
+            }//end teamMember
+        }
+    }
+}

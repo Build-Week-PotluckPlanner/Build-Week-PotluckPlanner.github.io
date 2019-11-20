@@ -144,7 +144,13 @@ h3 {
   font-size: 2.8rem;
 }
 h4 {
+  font-size: 2.4rem;
+}
+h5 {
   font-size: 2rem;
+}
+h6 {
+  font-size: 1.6rem;
 }
 p {
   font-size: 1.6rem;
@@ -292,7 +298,9 @@ footer .footerNav {
   justify-content: center;
   align-items: center;
   width: 50%;
+  padding: 1%;
   justify-content: space-around;
+  border-top: solid gray 1px;
 }
 @media (max-width: 600px) {
   footer .footerNav .navTextSectionSub {
@@ -303,6 +311,7 @@ footer .footerNav {
 @media (max-width: 1000px) {
   footer .footerNav {
     width: 75%;
+    justify-content: space-around;
   }
 }
 @media (max-width: 800px) {
@@ -580,4 +589,81 @@ footer .footerNav {
     width: 100%;
     justify-content: space-between;
   }
+}
+.contentContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  background: lightyellow;
+  border-top: solid gray 1px;
+  border-bottom: solid gray 1px;
+}
+.contentContainer .contentSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 80%;
+}
+.contentContainer .contentSection .theTeam {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.contentContainer .contentSection .theTeam .teamMember {
+  padding: 1%;
+  width: 25%;
+  border: dashed 1px gray;
+  background-color: lightyellow;
+  margin: 1%;
+}
+.contentContainer .contentSection .theTeam .teamMember .memberInfoContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contentContainer .contentSection .theTeam .teamMember .memberInfoContainer img {
+  width: 50%;
+  box-shadow: 10px 10px 10px black;
+  margin: 2%;
+  background-color: white;
+}
+.contentContainer .contentSection .theTeam .teamMember .memberInfoContainer .memberInfoDetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1%;
+  flex-direction: column;
+}
+.contentContainer .contentSection .theTeam .teamMember .teamLinksSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+}
+.contentContainer .contentSection .theTeam .teamMember .teamLinksSection a {
+  margin: 1%;
+}
+.contentContainer .contentSection .theTeam .teamMember .teamLinksSection a span {
+  display: none;
+}
+.contentContainer .contentSection .theTeam .teamMember .teamLinksSection a:visited,
+.contentContainer .contentSection .theTeam .teamMember .teamLinksSection a:link {
+  text-decoration: none;
+  color: #4b4b4b;
+}
+.contentContainer .contentSection .theTeam .teamMember .teamLinksSection a:hover {
+  color: #292929;
+}
+.contentContainer .contentSection .theTeam .teamMember .teamLinksSection a:active {
+  color: black;
 }
